@@ -1,0 +1,32 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/generated data
+data/raw/*
+data/processed/*
+checkpoints/*
+tokenizer/*.model
+tokenizer/*.vocab
+
+# Logs
+*.log
+"@ | Set-Content .gitignore
