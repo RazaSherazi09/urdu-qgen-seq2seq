@@ -1,4 +1,3 @@
-@"
 # Python
 __pycache__/
 *.py[cod]
@@ -20,13 +19,22 @@ env/
 .DS_Store
 Thumbs.db
 
-# Large/generated data
-data/raw/*
-data/processed/*
-checkpoints/*
+# Environment
+.env
+
+# Large model artifacts — upload these to Hugging Face Model repo
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# SentencePiece artifacts — generated, upload to HF Model repo
 tokenizer/*.model
 tokenizer/*.vocab
+tokenizer/sp_corpus.txt
+
+# Raw data (downloaded via datasets library)
+data/raw/
 
 # Logs
 *.log
-"@ | Set-Content .gitignore
