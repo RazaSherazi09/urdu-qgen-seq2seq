@@ -951,7 +951,7 @@ The project provides a foundation for future research into higher-quality Urdu Q
 
 ---
 
-# Author
+# Authors
 
 **Raza Sherazi**
 
@@ -961,6 +961,10 @@ GitHub: [RazaSherazi09](https://github.com/RazaSherazi09)
 
 Hugging Face: [razaasherazi](https://huggingface.co/razaasherazi)
 
+**Sameer Ali**
+
+Project Partner
+
 ---
 
 ## Links
@@ -968,3 +972,5 @@ Hugging Face: [razaasherazi](https://huggingface.co/razaasherazi)
 * **GitHub Repository:** [https://github.com/RazaSherazi09/urdu-qgen-seq2seq](https://github.com/RazaSherazi09/urdu-qgen-seq2seq)
 * **Hugging Face Model:** [https://huggingface.co/razaasherazi/urdu-qgen-seq2seq](https://huggingface.co/razaasherazi/urdu-qgen-seq2seq)
 * **Live Demo:** [https://huggingface.co/spaces/razaasherazi/urdu-qgen-demo](https://huggingface.co/spaces/razaasherazi/urdu-qgen-demo)
+* **LinkedIn Post:** [https://lnkd.in/p/d8cQGXK4](https://lnkd.in/p/d8cQGXK4)
+* **Medium Blog:** [Building an Urdu Question Generation System with BiLSTM and Bahdanau Attention](https://medium.com/@razaasherazi/building-an-urdu-question-generation-system-with-bilstm-and-bahdanau-attention-247e83d133ce)
