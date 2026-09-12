@@ -1,0 +1,16 @@
+{
+  "experiment": "experiment-2",
+  "best_epoch": 1,
+  "best_validation_loss": 6.6391770217069395,
+  "best_validation_perplexity": 764.4655954744359,
+  "training_token_accuracy": 0.3179182301057453,
+  "validation_token_accuracy": 0.2958341314798092,
+  "epochs_completed": 6,
+  "learning_rate": 0.0003,
+  "teacher_forcing_ratio": 0.8,
+  "batch_size": 64,
+  "gradient_clip": 1.0,
+  "train_pairs": 75069,
+  "validation_pairs": 10014,
+  "vocabulary_size": 8000
+}

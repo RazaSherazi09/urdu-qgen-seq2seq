@@ -1,0 +1,35 @@
+{
+  "experiment": "experiment-2",
+  "best_epoch": 1,
+  "uqa_validation_loss": 6.6391770217069395,
+  "uqa_validation_perplexity": 764.4655954744359,
+  "uqa_validation": {
+    "greedy": {
+      "BLEU-4": 1.3004837739136892,
+      "ROUGE-L": 0.000798881565807869,
+      "unk_rate": 0.0
+    },
+    "beam_5": {
+      "BLEU-4": 1.6334353150046321,
+      "ROUGE-L": 0.0009986019572598363,
+      "unk_rate": 0.0
+    }
+  },
+  "wiki_uqa": {
+    "num_examples": 178,
+    "greedy": {
+      "BLEU-4": 0.60202580838016,
+      "ROUGE-L": 0.0,
+      "unk_rate": 0.0
+    },
+    "beam_5": {
+      "BLEU-4": 0.56205172947692,
+      "ROUGE-L": 0.0,
+      "unk_rate": 0.0
+    }
+  },
+  "model": {
+    "parameters": 35505984,
+    "vocabulary_size": 8000
+  }
+}

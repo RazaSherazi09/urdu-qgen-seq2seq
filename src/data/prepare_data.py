@@ -93,16 +93,36 @@ def _process_split(
         stats["raw_rows"] += 1
 
         # ── Step 1: skip unanswerable rows ───────────────────────
-        answers = row.get("answers", {})
-        texts = answers.get("text", [])
-        starts = answers.get("answer_start", [])
-        if not texts or not starts:
-            continue
-        stats["answerable_rows"] += 1
+        # Support both:
+        # 1. Current UQA flat format:
+        #       {"answer": "...", "answer_start": 123}
+        #
+        # 2. SQuAD-style nested format:
+        #       {"answers": {"text": [...], "answer_start": [...]}}
 
-        # Use the first answer
-        answer_text = texts[0]
-        answer_start = starts[0]
+        if "answer" in row and "answer_start" in row:
+            answer_text = row["answer"]
+            answer_start = row["answer_start"]
+
+            if not answer_text or answer_start is None:
+                continue
+
+        elif "answers" in row:
+            answers = row.get("answers", {})
+
+            texts = answers.get("text", [])
+            starts = answers.get("answer_start", [])
+
+            if not texts or not starts:
+                continue
+
+            answer_text = texts[0]
+            answer_start = starts[0]
+
+        else:
+            continue
+
+        stats["answerable_rows"] += 1
         context = row["context"]
         question = row["question"]
 

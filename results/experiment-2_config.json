@@ -1,0 +1,21 @@
+{
+  "experiment": "experiment-2",
+  "vocab_size": 8000,
+  "enc_emb_dim": 256,
+  "dec_emb_dim": 256,
+  "enc_hid_dim": 512,
+  "dec_hid_dim": 512,
+  "enc_layers": 2,
+  "dec_layers": 2,
+  "dropout": 0.3,
+  "learning_rate": 0.0003,
+  "teacher_forcing_ratio": 0.8,
+  "batch_size": 64,
+  "gradient_clip": 1.0,
+  "epochs": 12,
+  "seed": 42,
+  "pad_idx": 0,
+  "unk_idx": 1,
+  "bos_idx": 2,
+  "eos_idx": 3
+}
